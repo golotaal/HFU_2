@@ -8,9 +8,110 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.hfu.MainActivity" >
 
-    <TextView
+    <EditText
+        android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="First Name" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Last Name" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_below="@+id/editText3"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Street" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:ems="10"
+        android:text="City" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText5"
+        android:layout_below="@+id/editText5"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="Phone" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText6"
+        android:layout_below="@+id/editText6"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:text="ZIP" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox1"
+        android:layout_below="@+id/editText7"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_below="@+id/editText4"
+        android:ems="10"
+        android:text="Course" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText8"
+        android:layout_marginLeft="20dp"
+        android:text="male" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox1"
+        android:layout_alignBottom="@+id/checkBox1"
+        android:layout_alignRight="@+id/editText8"
+        android:text="female" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:text="Submit" />
 
 </RelativeLayout>
